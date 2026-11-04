@@ -6,63 +6,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover university events, clubs and activities on CampusHub.">
+
     <title>Home - CampusHub</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
 </head>
 
 <body>
 
     <header>
-        <h1>CampusHub</h1>
-        <p>Discover events, clubs and activities on campus.</p>
 
-        <nav aria-label="Main navigation">
-            <a href="index.html" aria-current="page">Home</a>
-            <a href="events.html">Events</a>
-            <a href="clubs.html">Clubs</a>
-            <a href="contact.html">Contact</a>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="index.html">
+                    CampusHub
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="events.html">Events</a>
+                        <a class="nav-link" href="clubs.html">Clubs</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </div>
+                </div>
+
+            </div>
         </nav>
+
+        <section class="bg-primary text-white text-center py-5">
+            <div class="container">
+
+                <h1 class="display-3 fw-bold mb-3">
+                    Welcome to CampusHub
+                </h1>
+
+                <p class="lead mb-4">
+                    Your place to discover what's happening on campus,
+                    meet new people and explore student communities.
+                </p>
+
+                <a href="events.html" class="btn btn-light btn-lg">
+                    Explore Events
+                </a>
+
+            </div>
+        </section>
+
     </header>
 
-    <main>
+    <main class="container py-5">
 
-        <section>
-            <h2>Welcome to CampusHub</h2>
+        <section class="text-center mb-5">
+            <h2 class="display-6 fw-bold mb-3">
+                Discover Campus Life
+            </h2>
 
-            <p>
-                Your place to discover what's happening on campus,
-                meet new people and explore student communities.
+            <p class="text-secondary">
+                Discover workshops, student meetings, university clubs
+                and opportunities to connect with other students.
             </p>
         </section>
 
-        <section>
-            <h2>Upcoming Events</h2>
+        <div class="row g-4">
 
-            <p>
-                Discover workshops, student meetings and career
-                opportunities happening on campus.
-            </p>
+            <div class="col-12 col-md-6">
+                <section class="card h-100 shadow-sm border-0">
+                    <div class="card-body p-4">
 
-            <a href="events.html">View all events</a>
-        </section>
+                        <span class="badge text-bg-primary mb-3">
+                            Events
+                        </span>
 
-        <section>
-            <h2>University Clubs</h2>
+                        <h3 class="card-title fw-bold">
+                            Upcoming Events
+                        </h3>
 
-            <p>
-                Find a community that matches your interests,
-                from programming and robotics to digital design.
-            </p>
+                        <p class="card-text text-secondary">
+                            Discover workshops, student meetings and career
+                            opportunities happening on campus.
+                        </p>
 
-            <a href="clubs.html">Explore clubs</a>
-        </section>
+                        <a href="events.html" class="btn btn-primary">
+                            View All Events
+                        </a>
+
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <section class="card h-100 shadow-sm border-0">
+                    <div class="card-body p-4">
+
+                        <span class="badge text-bg-success mb-3">
+                            Community
+                        </span>
+
+                        <h3 class="card-title fw-bold">
+                            University Clubs
+                        </h3>
+
+                        <p class="card-text text-secondary">
+                            Find a community that matches your interests,
+                            from programming and robotics to digital design.
+                        </p>
+
+                        <a href="clubs.html" class="btn btn-outline-primary">
+                            Explore Clubs
+                        </a>
+
+                    </div>
+                </section>
+            </div>
+
+        </div>
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 CampusHub. All rights reserved.</p>
+    <footer class="bg-dark text-white text-center py-4 mt-4">
+        <div class="container">
+            <p class="mb-0">
+                &copy; 2026 CampusHub. All rights reserved.
+            </p>
+        </div>
     </footer>
 
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
+</body>
 </html>
