@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="sq">
 
@@ -6,122 +5,228 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore workshops, student meetings and career events on CampusHub.">
+
     <title>Events - CampusHub</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
 </head>
 
 <body>
 
     <header>
-        <h1>CampusHub</h1>
-        <p>Discover events, clubs and activities on campus.</p>
 
-        <nav aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="events.html" aria-current="page">Events</a>
-            <a href="clubs.html">Clubs</a>
-            <a href="contact.html">Contact</a>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="index.html">
+                    CampusHub
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="events.html">Events</a>
+                        <a class="nav-link" href="clubs.html">Clubs</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </div>
+                </div>
+
+            </div>
         </nav>
-    </header>
 
-    <main>
+        <section class="bg-primary text-white text-center py-5">
+            <div class="container">
 
-        <section>
-            <h2>Featured Events</h2>
+                <h1 class="display-3 fw-bold mb-3">
+                    Campus Events
+                </h1>
 
-            <div>
-
-                <article>
-                    <h3>Web Development Workshop</h3>
-
-                    <p>
-                        Learn the basics of modern web development
-                        and explore the technologies behind websites.
-                    </p>
-
-                    <p><strong>Status:</strong> Open</p>
-
-                    <button type="button">Join Event</button>
-                </article>
-
-                <article>
-                    <span>Featured</span>
-
-                    <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMR7Ps9Ptz3Dg05OzleaoEwQjo509dXytkk_hUQ2F4TA&s=10"
-                        alt="Students participating in a programming event"
-                    >
-
-                    <h3>Programming Club Meeting</h3>
-
-                    <p>
-                        Meet students interested in programming,
-                        share ideas and work on projects together.
-                    </p>
-
-                    <p><strong>Status:</strong> Open</p>
-
-                    <button type="button">Join Event</button>
-                </article>
-
-                <article>
-                    <h3>Career Day</h3>
-
-                    <p>
-                        Meet companies, discover career paths
-                        and learn about internship opportunities.
-                    </p>
-
-                    <p><strong>Status:</strong> Coming Soon</p>
-
-                    <button type="button">Join Event</button>
-                </article>
+                <p class="lead mb-0">
+                    Discover workshops, student meetings and career opportunities happening on campus.
+                </p>
 
             </div>
         </section>
 
-        <section>
-            <h2>Event Schedule</h2>
+    </header>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th scope="col">Event</th>
-                        <th scope="col">Date</th>
-                        <th scope="col">Location</th>
-                        <th scope="col">Status</th>
-                    </tr>
-                </thead>
+    <main class="container py-5">
 
-                <tbody>
-                    <tr>
-                        <td>Web Development Workshop</td>
-                        <td>15 October</td>
-                        <td>Room 204</td>
-                        <td>Open</td>
-                    </tr>
+        <section class="mb-5">
 
-                    <tr>
-                        <td>Programming Club Meeting</td>
-                        <td>18 October</td>
-                        <td>Room 105</td>
-                        <td>Open</td>
-                    </tr>
+            <div class="text-center mb-4">
+                <h2 class="display-6 fw-bold">Featured Events</h2>
+                <p class="text-secondary">
+                    Explore our upcoming activities and find something interesting to join.
+                </p>
+            </div>
 
-                    <tr>
-                        <td>Career Day</td>
-                        <td>22 October</td>
-                        <td>Main Hall</td>
-                        <td>Coming Soon</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 shadow-sm border-0">
+
+                        <div class="card-body p-4">
+
+                            <span class="badge text-bg-primary mb-3">
+                                Featured
+                            </span>
+
+                            <h3 class="card-title h4 fw-bold">
+                                Web Development Workshop
+                            </h3>
+
+                            <p class="card-text text-secondary">
+                                Learn the basics of modern web development
+                                and explore the technologies behind websites.
+                            </p>
+
+                            <p>
+                                <strong>Status:</strong>
+                                <span class="badge text-bg-success">Open</span>
+                            </p>
+
+                            <button type="button" class="btn btn-primary">
+                                Join Event
+                            </button>
+
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 shadow-sm border-0">
+
+                        <img
+                            class="card-img-top"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMR7Ps9Ptz3Dg05OzleaoEwQjo509dXytkk_hUQ2F4TA&s=10"
+                            alt="Students participating in a programming event">
+
+                        <div class="card-body p-4">
+
+                            <h3 class="card-title h4 fw-bold">
+                                Programming Club Meeting
+                            </h3>
+
+                            <p class="card-text text-secondary">
+                                Meet students interested in programming,
+                                share ideas and work on projects together.
+                            </p>
+
+                            <p>
+                                <strong>Status:</strong>
+                                <span class="badge text-bg-success">Open</span>
+                            </p>
+
+                            <button type="button" class="btn btn-primary">
+                                Join Event
+                            </button>
+
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 shadow-sm border-0">
+
+                        <div class="card-body p-4">
+
+                            <h3 class="card-title h4 fw-bold">
+                                Career Day
+                            </h3>
+
+                            <p class="card-text text-secondary">
+                                Meet companies, discover career paths
+                                and learn about internship opportunities.
+                            </p>
+
+                            <p>
+                                <strong>Status:</strong>
+                                <span class="badge text-bg-warning">Coming Soon</span>
+                            </p>
+
+                            <button type="button" class="btn btn-outline-primary">
+                                Join Event
+                            </button>
+
+                        </div>
+                    </article>
+                </div>
+
+            </div>
         </section>
 
-        <aside>
-            <h2>Did You Know?</h2>
+        <section class="mb-5">
 
-            <p>
+            <h2 class="display-6 fw-bold mb-4">
+                Event Schedule
+            </h2>
+
+            <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle">
+
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Event</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Web Development Workshop</td>
+                            <td>15 October</td>
+                            <td>Room 204</td>
+                            <td>
+                                <span class="badge text-bg-success">Open</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Programming Club Meeting</td>
+                            <td>18 October</td>
+                            <td>Room 105</td>
+                            <td>
+                                <span class="badge text-bg-success">Open</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Career Day</td>
+                            <td>22 October</td>
+                            <td>Main Hall</td>
+                            <td>
+                                <span class="badge text-bg-warning">Coming Soon</span>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+        </section>
+
+        <aside class="bg-primary-subtle rounded-3 p-4">
+            <h2 class="h4 fw-bold">Did You Know?</h2>
+
+            <p class="mb-0">
                 Students can join multiple university clubs
                 and explore different interests throughout the semester.
             </p>
@@ -129,10 +234,15 @@
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 CampusHub. All rights reserved.</p>
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">
+                &copy; 2026 CampusHub. All rights reserved.
+            </p>
+        </div>
     </footer>
 
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
+</body>
 </html>
