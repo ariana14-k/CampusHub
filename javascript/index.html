@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <title>JavaScript</title>
+</head>
+<body>
+
+    <h1>Hyrje në JavaScript</h1>
+<p id="message">Old message</p>
+<button onclick="changeMessage()">Change message</button>
+<img id="eventImage" src="../images/logo.svg" width="300">
+
+<button onclick="showMessage()">Click me</button>
+
+<p onmouseover="this.style.color='red'"
+   onmouseout="this.style.color='black'">
+    Move your mouse over this text!
+</p>
+
+
+<select onchange="showSelection(this.value)">
+    <option value="">Choose an event</option>
+    <option value="Workshop">Workshop</option>
+    <option value="Career Day">Career Day</option>
+</select>
+
+<input type="text" onkeydown="console.log('A key was pressed!')">
+
+<form onsubmit="showMessage()">
+    <input type="text" placeholder="Your name">
+    <button type="submit">Submit</button>
+</form>
+
+    <script>
+        console.log("Hello JavaScript!");
+    </script>
+    <script src="script.js"></script>
+
+</body>
+</html>
