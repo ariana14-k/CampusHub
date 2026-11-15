@@ -1,40 +1,69 @@
 <!DOCTYPE html>
-<html lang="sq">
-<head>
-    <title>JavaScript</title>
-</head>
-<body>
+<html>
+    <head>
+        <title>Javascript</title>
 
-    <h1>Hyrje në JavaScript</h1>
-<p id="message">Old message</p>
-<button onclick="changeMessage()">Change message</button>
-<img id="eventImage" src="../images/logo.svg" width="300">
+        <style>
+            .highlight {
+                background-color: lightblue;
+                padding: 10px;
+            }
+        </style>
+    </head>
 
-<button onclick="showMessage()">Click me</button>
+    <body>
+        <h1 id="heading">Hyrje ne Javascript</h1>
 
-<p onmouseover="this.style.color='red'"
-   onmouseout="this.style.color='black'">
-    Move your mouse over this text!
-</p>
+        <p 
+            onmouseover="this.style.color='blue'"
+            onmouseout="this.style.color='black'"
+        id="message">Old message</p>
+        <p id="text" style="display: none;">New message</p>
 
+        <!-- <img id="eventImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZjwivmat-j5ygTHEK1aAGcTofSvz47oQHjMewB-cDZQ&s=10"> -->
+        <button type="button" onclick="changeMessage()">Change message</button>
 
-<select onchange="showSelection(this.value)">
-    <option value="">Choose an event</option>
-    <option value="Workshop">Workshop</option>
-    <option value="Career Day">Career Day</option>
-</select>
+        <select onchange="showSelection(this.value)">
+            <option value="">Choose an event</option>
+            <option value="Workshops">Workshops</option>
+            <option value="Hackathons">Hackathons</option>
+        </select>
 
-<input type="text" onkeydown="console.log('A key was pressed!')">
+        <input type="text" onkeydown="console.log('A kew was pressed')">
 
-<form onsubmit="showMessage()">
-    <input type="text" placeholder="Your name">
-    <button type="submit">Submit</button>
-</form>
+        <form onsubmit="submitForm()">
+            <input type="text" placeholder="your name">
+            <button type="submit">Submit</button>
+        </form>
 
-    <script>
-        console.log("Hello JavaScript!");
-    </script>
-    <script src="script.js"></script>
+        <button id="myButton">Click Me</button>
 
-</body>
+        <p class="text">Teksti 1</p>
+        <p class="text">Teksti 2</p>
+        <p class="text">Teksti 3</p>
+
+        <div id="events"></sdiv>
+
+        <section class="event-card">
+            <p>This is a paragraph.</p>
+        </section>
+
+        <button type="button" id="add-css">Add Highlight</button>
+        <button type="button" id="remove-css">Remove Highlight</button>
+        <button type="button" id="toggle-css">Toggle Highlight</button>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your name">
+            <input type="email" id="email" placeholder="Your email">
+            <textarea id="message-text" placeholder="Your message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div id="posts"></div>
+        <!-- <script>
+            console.log("Hello Javascript");
+        </script> -->
+        <script src="script.js" defer></script>
+    </body>
 </html>
